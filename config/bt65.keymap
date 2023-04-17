@@ -8,12 +8,12 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        tilde {
             bindings = <&kp TILDE>;
             key-positions = <64 0>;
         };
 
-        new_combo {
+        altf4 {
             bindings = <&kp LA(F4)>;
             key-positions = <60 4>;
         };
