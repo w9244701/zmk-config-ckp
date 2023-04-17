@@ -11,13 +11,13 @@
         tilde {
             bindings = <&kp RS(GRAVE)>;
             key-positions = <0 55>;
-            timeout-ms = <999999999>;
+            timeout-ms = <100000>;
         };
 
         altf4 {
             bindings = <&kp LA(F4)>;
             key-positions = <60 4>;
-            timeout-ms = <100000000000000000000>;
+            timeout-ms = <100000>;
         };
     };
 
