@@ -8,14 +8,9 @@
     combos {
         compatible = "zmk,combos";
 
-        tilde {
+        new_combo {
             bindings = <&kp TILDE>;
-            key-positions = <55 0>;
-        };
-
-        altf4 {
-            bindings = <&kp LA(F4)>;
-            key-positions = <60 4>;
+            key-positions = <64 0>;
         };
     };
 
