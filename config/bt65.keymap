@@ -9,15 +9,15 @@
         compatible = "zmk,combos";
 
         tilde {
-            bindings = <&kp TILDE>;
+            bindings = <&kp A>;
             key-positions = <0 55>;
-            timeout-ms = <3>;
+            timeout-ms = <100>;
         };
 
         altf4 {
             bindings = <&kp LA(F4)>;
             key-positions = <60 4>;
-            timeout-ms = <20>;
+            timeout-ms = <200>;
         };
     };
 
