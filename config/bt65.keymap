@@ -9,7 +9,7 @@
         compatible = "zmk,combos";
 
         tilde {
-            bindings = <&kp RS(GRAVE)>;
+            bindings = <&kt RS(GRAVE)>;
             key-positions = <0 55>;
             timeout-ms = <100000>;
         };
