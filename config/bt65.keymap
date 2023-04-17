@@ -9,7 +9,7 @@
         compatible = "zmk,combos";
 
         new_combo {
-            bindings = <&kp TILDE>;
+            bindings = <&kp A>;
             key-positions = <64 0>;
         };
     };
