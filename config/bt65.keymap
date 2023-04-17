@@ -10,7 +10,7 @@
 
         tilde {
             bindings = <&kp TILDE>;
-            key-positions = <64 0>;
+            key-positions = <0 55>;
         };
 
         altf4 {
