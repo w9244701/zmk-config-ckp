@@ -21,9 +21,9 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
-        new_behavior: new_behavior {
+        alt_f4: alt_f4 {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "ALT_F4";
             bindings =
                 <&kp NUMBER_4>,
                 <&kp LA(F4)>;
