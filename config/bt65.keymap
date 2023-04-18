@@ -1,8 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/bt.h>
 
 / {
@@ -26,11 +26,11 @@
             // ------------------------------------------------------------------------------------------------------------
 
             bindings = <
-  &kp ESC  &kp NUMBER_1    &kp N2    &kp N3  &kp NUMBER_4    &kp N5  &kp N6     &kp N7     &kp N8    &kp N9     &kp N0  &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp HOME
-  &kp TAB         &kp Q     &kp W     &kp E         &kp R     &kp T   &kp Y      &kp U      &kp I     &kp O      &kp P   &kp LBKT   &kp RBKT       &kp BSLH   &kp DEL
- &kp CLCK         &kp A     &kp S     &kp D         &kp F     &kp G   &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT    &kp RET      &kp PG_UP
-&kp LSHFT         &kp Z     &kp X     &kp C         &kp V     &kp B   &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT     &kp UP      &kp PG_DN
-              &kp LCTRL  &kp LGUI  &kp LALT     &kp SPACE  &kp RALT   &mo 1  &kp RCTRL   &kp LEFT  &kp DOWN  &kp RIGHT
+     &kp ESC  &kp NUMBER_1    &kp N2    &kp N3  &kp NUMBER_4    &kp N5  &kp N6     &kp N7     &kp N8    &kp N9     &kp N0  &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp HOME
+     &kp TAB         &kp Q     &kp W     &kp E         &kp R     &kp T   &kp Y      &kp U      &kp I     &kp O      &kp P   &kp LBKT   &kp RBKT       &kp BSLH   &kp DEL
+&out OUT_BLE         &kp A     &kp S     &kp D         &kp F     &kp G   &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT    &kp RET      &kp PG_UP
+   &kp LSHFT         &kp Z     &kp X     &kp C         &kp V     &kp B   &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT     &kp UP      &kp PG_DN
+                 &kp LCTRL  &kp LGUI  &kp LALT     &kp SPACE  &kp RALT   &mo 1  &kp RCTRL   &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
