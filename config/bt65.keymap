@@ -12,7 +12,6 @@
         new_combo {
             bindings = <&kp LA(F4)>;
             key-positions = <60 4>;
-            timeout-ms = <100000>;
         };
     };
 
