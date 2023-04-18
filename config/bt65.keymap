@@ -10,27 +10,6 @@
     };
 
     behaviors {
-        esc_grave: esc_grave {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ESC_GRAVE";
-            bindings =
-                <&kp ESC>,
-                <&kp RS(GRAVE)>;
-
-            #binding-cells = <0>;
-            mods = <(|MOD_RSFT)>;
-            keep-mods = <()>;
-        };
-        alt_f4: alt_f4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_F4";
-            bindings =
-                <&kp NUMBER_4>,
-                <&kp LA(F4)>;
-
-            #binding-cells = <0>;
-            mods = <(|MOD_LALT)>;
-        };
     };
 
     keymap {
