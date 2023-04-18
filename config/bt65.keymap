@@ -29,7 +29,8 @@
                 <&kp LA(F4)>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <()>;
+            keep-mods = <(MOD_LALT)>;
         };
     };
 
