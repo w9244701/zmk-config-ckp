@@ -18,8 +18,8 @@
                 <&kp RS(GRAVE)>;
 
             #binding-cells = <0>;
-            mods = <()>;
-            keep-mods = <(MOD_RSFT)>;
+            mods = <(|MOD_RSFT)>;
+            keep-mods = <()>;
         };
         alt_f4: alt_f4 {
             compatible = "zmk,behavior-mod-morph";
@@ -29,8 +29,7 @@
                 <&kp LA(F4)>;
 
             #binding-cells = <0>;
-            mods = <()>;
-            keep-mods = <(MOD_LALT)>;
+            mods = <(|MOD_LALT)>;
         };
     };
 
