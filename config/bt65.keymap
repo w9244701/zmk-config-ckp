@@ -16,7 +16,7 @@
             label = "TIDLE";
             bindings =
                 <&kp ESC>,
-                <&kp RS(GRAVE)>;
+                <&kp GRAVE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -26,7 +26,7 @@
             label = "ALT_F4";
             bindings =
                 <&kp NUMBER_4>,
-                <&kp LA(F4)>;
+                <&kp F4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
