@@ -22,10 +22,20 @@
             label = "TIDLE";
             bindings =
                 <&kp ESC>,
-                <&kp TILDE>;
+                <&kp RS(GRAVE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
+        };
+        alt_f4: alt_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_F4";
+            bindings =
+                <&kp NUMBER_4>,
+                <&kp LA(F4)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
