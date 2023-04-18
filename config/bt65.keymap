@@ -11,25 +11,15 @@
     };
 
     behaviors {
-        new_behavior: new_behavior {
+        tidle: tidle {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "TIDLE";
             bindings =
                 <&kp ESC>,
                 <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
-        };
-        alt_f4: alt_f4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_F4";
-            bindings =
-                <&kp NUMBER_4>,
-                <&kp LA(F4)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT|MOD_LSFT|MOD_LCTL|MOD_LGUI)>;
         };
     };
 
