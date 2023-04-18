@@ -21,6 +21,16 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NEW_BEHAVIOR";
+            bindings =
+                <&kp NUMBER_4>,
+                <&kp LA(F4)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_LSFT|MOD_LCTL|MOD_LGUI)>;
+        };
     };
 
     keymap {
