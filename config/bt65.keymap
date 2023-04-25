@@ -70,7 +70,7 @@
             bindings = <
 &kp RS(GRAVE)        &kp F1        &kp F2        &kp F3  &kp F4    &kp F5  &kp F6      &kp F7   &kp F8        &kp F9     &kp F10    &kp F11       &kp F12       &bl BL_TOG  &rgb_ug RGB_TOG
  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans      &trans  &kp INS        &trans      &trans     &trans        &trans       &sys_reset  &rgb_ug RGB_HUI
-       &trans      &kp LEFT      &kp DOWN     &kp RIGHT  &trans    &trans  &trans      &trans   &trans        &trans      &trans     &trans   &bootloader  &rgb_ug RGB_HUD
+   &bt BT_CLR      &kp LEFT      &kp DOWN     &kp RIGHT  &trans    &trans  &trans      &trans   &trans        &trans      &trans     &trans   &bootloader  &rgb_ug RGB_HUD
     &kp LSHFT        &trans        &trans        &trans  &trans    &trans  &trans  &kp C_MUTE   &trans        &trans      &trans  &kp RSHFT  &kp C_VOL_UP       &bl BL_INC
                   &kp LCTRL  &kp LEFT_WIN      &kp LALT  &trans  &kp RALT  &trans   &kp RCTRL   &trans  &kp C_VOL_DN  &bl BL_DEC
             >;
