@@ -35,6 +35,77 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        bt_00: bt_00 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT_00";
+            bindings = <&bt_clr_0>, <&bt_sel_0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <3000>;
+        };
+
+        bt_01: bt_01 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT_01";
+            bindings = <&bt_clr_1>, <&bt_sel_1>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <3000>;
+        };
+
+        bt_02: bt_02 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT_02";
+            bindings = <&bt_clr_2>, <&bt_sel_2>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <3000>;
+        };
+    };
+
+    macros {
+        bt_sel_0: bt_sel_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 0>;
+            label = "BT_SEL_0";
+        };
+
+        bt_sel_1: bt_sel_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1>;
+            label = "BT_SEL_1";
+        };
+
+        bt_sel_2: bt_sel_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 2>;
+            label = "BT_SEL_2";
+        };
+
+        bt_clr_0: bt_clr_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 0 &bt BT_CLR>;
+            label = "BT_CLR_0";
+        };
+
+        bt_clr_1: bt_clr_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1 &bt BT_CLR>;
+            label = "BT_CLR_1";
+        };
+
+        bt_clr_2: bt_clr_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 2 &bt BT_CLR>;
+            label = "BT_CLR_2";
+        };
     };
 
     keymap {
@@ -62,11 +133,11 @@
 
         raise {
             bindings = <
-&kp RS(GRAVE)  &kp F1        &kp F2        &kp F3        &kp F4  &kp F5    &kp F6  &kp F7      &kp F8      &kp F9        &kp F10     &kp F11    &kp F12       &bl BL_TOG       &rgb_ug RGB_TOG
-&out OUT_TOG   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans    &trans  &trans      &kp INS     &trans        &trans      &trans     &trans        &sys_reset       &rgb_ug RGB_EFF
-&bt BT_CLR     &kp LEFT      &kp DOWN      &kp RIGHT     &trans  &trans    &trans  &trans      &trans      &trans        &trans      &trans     &bootloader   &rgb_ug RGB_HUD
-&kp LSHFT      &trans        &trans        &trans        &trans  &trans    &trans  &kp C_MUTE  &trans      &trans        &trans      &kp RSHFT  &kp C_VOL_UP  &bl BL_INC
-               &kp LCTRL     &kp LEFT_WIN  &kp LALT      &trans  &kp RALT  &trans  &kp RCTRL   &bl BL_DEC  &kp C_VOL_DN  &bl BL_INC
+&kp RS(GRAVE)  &kp F1      &kp F2        &kp F3      &kp F4  &kp F5    &kp F6  &kp F7      &kp F8      &kp F9        &kp F10     &kp F11    &kp F12       &bl BL_TOG       &rgb_ug RGB_TOG
+&out OUT_USB   &bt_00 0 0  &bt_01 0 0    &bt_02 0 0  &trans  &trans    &trans  &trans      &kp INS     &trans        &trans      &trans     &trans        &sys_reset       &rgb_ug RGB_EFF
+&trans         &trans      &trans        &kp RIGHT   &trans  &trans    &trans  &trans      &trans      &trans        &trans      &trans     &bootloader   &rgb_ug RGB_HUD
+&kp LSHFT      &trans      &trans        &trans      &trans  &trans    &trans  &kp C_MUTE  &trans      &trans        &trans      &kp RSHFT  &kp C_VOL_UP  &bl BL_INC
+               &kp LCTRL   &kp LEFT_WIN  &kp LALT    &trans  &kp RALT  &trans  &kp RCTRL   &bl BL_DEC  &kp C_VOL_DN  &bl BL_INC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
